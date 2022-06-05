@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Serif', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.App{
+  height:100vh;
+ background-color: #FBAB7E;
+  background-image: linear-gradient(180deg, #FBAB7E 0%, #F7CE68 100%);
+  
+}
+li span.active::before {
+  content: '>';
+  position: relative;
+  top: -2px;
+  margin-right: 6px;
+  transform: scale(0.8, 1);
+  display: inline-block;
+}
